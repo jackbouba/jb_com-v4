@@ -141,13 +141,18 @@ a {
   color: #FFF;
   display: table-cell;
   vertical-align: middle;
+  .text--supplemental {
+    display: none;
+  }
 }
 .portfolio-image {
   opacity: 0;
   z-index: 1;
   transition: opacity .5s ease-in-out;
 }
-
+.img-browser {
+  border-radius: .8%;
+}
 
 
 

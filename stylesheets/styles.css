@@ -8942,10 +8942,19 @@ a {
   display: table-cell;
   vertical-align: middle;
 }
+/* line 144, ../sass/styles.scss */
+.portfolio-item-title .text--supplemental {
+  display: none;
+}
 
-/* line 145, ../sass/styles.scss */
+/* line 148, ../sass/styles.scss */
 .portfolio-image {
   opacity: 0;
   z-index: 1;
   transition: opacity .5s ease-in-out;
+}
+
+/* line 153, ../sass/styles.scss */
+.img-browser {
+  border-radius: .8%;
 }
