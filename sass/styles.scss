@@ -126,8 +126,16 @@ a {
   left: 0;
   z-index: 2;
   &:hover {
+    h2 {
+      opacity: 1;
+      transition-delay: .2s;
+    }
+    p {
+      opacity: 1;
+      transition-delay: .3s;
+    }
     ~ img {
-      opacity: .6;
+      opacity: .3;
     }
   }
 }
@@ -141,14 +149,22 @@ a {
   color: #FFF;
   display: table-cell;
   vertical-align: middle;
-  .text--supplemental {
-    display: none;
+  h2 {
+    opacity: 0;
+    transition: opacity .4s ease-in-out;
+    transition-delay: 0s;
+  }
+  p {
+    opacity: 0;
+    transition: opacity .4s ease-in-out;
+    transition-delay: 0s;
   }
 }
 .portfolio-image {
-  opacity: 0;
+  box-shadow: #000 0em 0em 0em;
+  opacity: 1;
   z-index: 1;
-  transition: opacity .5s ease-in-out;
+  transition: opacity .4s ease-in-out;
 }
 .img-browser {
   border-radius: .8%;

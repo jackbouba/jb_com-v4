@@ -8924,11 +8924,21 @@ a {
   z-index: 2;
 }
 /* line 129, ../sass/styles.scss */
+.portfolio-item-outer:hover h2 {
+  opacity: 1;
+  transition-delay: .2s;
+}
+/* line 133, ../sass/styles.scss */
+.portfolio-item-outer:hover p {
+  opacity: 1;
+  transition-delay: .3s;
+}
+/* line 137, ../sass/styles.scss */
 .portfolio-item-outer:hover ~ img {
-  opacity: .6;
+  opacity: .3;
 }
 
-/* line 134, ../sass/styles.scss */
+/* line 142, ../sass/styles.scss */
 .portfolio-item-inner {
   display: table;
   min-height: 200px;
@@ -8936,25 +8946,34 @@ a {
   height: 100%;
 }
 
-/* line 140, ../sass/styles.scss */
+/* line 148, ../sass/styles.scss */
 .portfolio-item-title {
   color: #FFF;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 144, ../sass/styles.scss */
-.portfolio-item-title .text--supplemental {
-  display: none;
-}
-
-/* line 148, ../sass/styles.scss */
-.portfolio-image {
+/* line 152, ../sass/styles.scss */
+.portfolio-item-title h2 {
   opacity: 0;
-  z-index: 1;
-  transition: opacity .5s ease-in-out;
+  transition: opacity .4s ease-in-out;
+  transition-delay: 0s;
+}
+/* line 157, ../sass/styles.scss */
+.portfolio-item-title p {
+  opacity: 0;
+  transition: opacity .4s ease-in-out;
+  transition-delay: 0s;
 }
 
-/* line 153, ../sass/styles.scss */
+/* line 163, ../sass/styles.scss */
+.portfolio-image {
+  box-shadow: #000 0em 0em 0em;
+  opacity: 1;
+  z-index: 1;
+  transition: opacity .4s ease-in-out;
+}
+
+/* line 169, ../sass/styles.scss */
 .img-browser {
   border-radius: .8%;
 }
