@@ -79,6 +79,9 @@ a {
     color: #000;
   }
 }
+.text--small {
+  @extend small;
+}
 .text--supplemental {
   @extend .raleway;
   color: $secondary;

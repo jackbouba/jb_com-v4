@@ -95,7 +95,7 @@ mark {
 }
 
 /* line 154, ../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_normalize.scss */
-small {
+small, .text--small {
   font-size: 80%;
 }
 
@@ -1837,19 +1837,20 @@ h1, h2, h3, h4, h5, h6,
   color: inherit;
 }
 /* line 16, ../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_type.scss */
-h1 small,
-h1 .small, h2 small,
-h2 .small, h3 small,
-h3 .small, h4 small,
-h4 .small, h5 small,
-h5 .small, h6 small,
+h1 small, h1 .text--small,
+h1 .small, h2 small, h2 .text--small,
+h2 .small, h3 small, h3 .text--small,
+h3 .small, h4 small, h4 .text--small,
+h4 .small, h5 small, h5 .text--small,
+h5 .small, h6 small, h6 .text--small,
 h6 .small,
 .h1 small,
-.h1 .small, .h2 small,
-.h2 .small, .h3 small,
-.h3 .small, .h4 small,
-.h4 .small, .h5 small,
-.h5 .small, .h6 small,
+.h1 .text--small,
+.h1 .small, .h2 small, .h2 .text--small,
+.h2 .small, .h3 small, .h3 .text--small,
+.h3 .small, .h4 small, .h4 .text--small,
+.h4 .small, .h5 small, .h5 .text--small,
+.h5 .small, .h6 small, .h6 .text--small,
 .h6 .small {
   font-weight: normal;
   line-height: 1;
@@ -1864,14 +1865,16 @@ h3, .h3 {
   margin-bottom: 15px;
 }
 /* line 30, ../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_type.scss */
-h1 small,
-h1 .small, .h1 small,
+h1 small, h1 .text--small,
+h1 .small, .h1 small, .h1 .text--small,
 .h1 .small,
 h2 small,
-h2 .small, .h2 small,
+h2 .text--small,
+h2 .small, .h2 small, .h2 .text--small,
 .h2 .small,
 h3 small,
-h3 .small, .h3 small,
+h3 .text--small,
+h3 .small, .h3 small, .h3 .text--small,
 .h3 .small {
   font-size: 65%;
 }
@@ -1884,14 +1887,16 @@ h6, .h6 {
   margin-bottom: 15px;
 }
 /* line 41, ../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_type.scss */
-h4 small,
-h4 .small, .h4 small,
+h4 small, h4 .text--small,
+h4 .small, .h4 small, .h4 .text--small,
 .h4 .small,
 h5 small,
-h5 .small, .h5 small,
+h5 .text--small,
+h5 .small, .h5 small, .h5 .text--small,
 .h5 .small,
 h6 small,
-h6 .small, .h6 small,
+h6 .text--small,
+h6 .small, .h6 small, .h6 .text--small,
 .h6 .small {
   font-size: 75%;
 }
@@ -1946,7 +1951,7 @@ p {
 }
 
 /* line 78, ../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_type.scss */
-small,
+small, .text--small,
 .small {
   font-size: 88%;
 }
@@ -2234,6 +2239,7 @@ blockquote ol:last-child {
 /* line 257, ../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_type.scss */
 blockquote footer,
 blockquote small,
+blockquote .text--small,
 blockquote .small {
   display: block;
   font-size: 80%;
@@ -2243,6 +2249,7 @@ blockquote .small {
 /* line 265, ../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_type.scss */
 blockquote footer:before,
 blockquote small:before,
+blockquote .text--small:before,
 blockquote .small:before {
   content: '\2014 \00A0';
 }
@@ -2259,18 +2266,22 @@ blockquote.pull-right {
 /* line 286, ../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_type.scss */
 .blockquote-reverse footer:before,
 .blockquote-reverse small:before,
+.blockquote-reverse .text--small:before,
 .blockquote-reverse .small:before,
 blockquote.pull-right footer:before,
 blockquote.pull-right small:before,
+blockquote.pull-right .text--small:before,
 blockquote.pull-right .small:before {
   content: '';
 }
 /* line 287, ../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_type.scss */
 .blockquote-reverse footer:after,
 .blockquote-reverse small:after,
+.blockquote-reverse .text--small:after,
 .blockquote-reverse .small:after,
 blockquote.pull-right footer:after,
 blockquote.pull-right small:after,
+blockquote.pull-right .text--small:after,
 blockquote.pull-right .small:after {
   content: '\00A0 \2014';
 }
@@ -7013,10 +7024,13 @@ button.list-group-item {
 /* line 96, ../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_list-group.scss */
 .list-group-item.active .list-group-item-heading,
 .list-group-item.active .list-group-item-heading > small,
+.list-group-item.active .list-group-item-heading > .text--small,
 .list-group-item.active .list-group-item-heading > .small, .list-group-item.active:hover .list-group-item-heading,
 .list-group-item.active:hover .list-group-item-heading > small,
+.list-group-item.active:hover .list-group-item-heading > .text--small,
 .list-group-item.active:hover .list-group-item-heading > .small, .list-group-item.active:focus .list-group-item-heading,
 .list-group-item.active:focus .list-group-item-heading > small,
+.list-group-item.active:focus .list-group-item-heading > .text--small,
 .list-group-item.active:focus .list-group-item-heading > .small {
   color: inherit;
 }
@@ -7215,8 +7229,10 @@ button.list-group-item-danger.active:focus {
 /* line 39, ../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_panels.scss */
 .panel-title > a,
 .panel-title > small,
+.panel-title > .text--small,
 .panel-title > .small,
 .panel-title > small > a,
+.panel-title > .text--small > a,
 .panel-title > .small > a {
   color: inherit;
 }
@@ -8876,42 +8892,42 @@ a {
   color: #000;
 }
 
-/* line 82, ../sass/styles.scss */
+/* line 85, ../sass/styles.scss */
 .text--supplemental {
   color: #D27676;
   font-size: .8em;
   text-transform: uppercase;
 }
 
-/* line 91, ../sass/styles.scss */
+/* line 94, ../sass/styles.scss */
 .clear {
   clear: both;
 }
 
-/* line 94, ../sass/styles.scss */
+/* line 97, ../sass/styles.scss */
 .lnr {
   font-size: 20px;
 }
-/* line 96, ../sass/styles.scss */
+/* line 99, ../sass/styles.scss */
 .lnr.lnr-2x {
   font-size: 40px;
 }
-/* line 99, ../sass/styles.scss */
+/* line 102, ../sass/styles.scss */
 .lnr.lnr-3x {
   font-size: 60px;
 }
 
-/* line 110, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 .main-header a {
   border: none;
 }
-/* line 113, ../sass/styles.scss */
+/* line 116, ../sass/styles.scss */
 .main-header .lnr-arrow-left {
   display: inline-block;
   margin-top: 15px;
 }
 
-/* line 118, ../sass/styles.scss */
+/* line 121, ../sass/styles.scss */
 .portfolio-item-outer {
   border-bottom: none;
   position: absolute;
@@ -8923,22 +8939,22 @@ a {
   left: 0;
   z-index: 2;
 }
-/* line 129, ../sass/styles.scss */
+/* line 132, ../sass/styles.scss */
 .portfolio-item-outer:hover h2 {
   opacity: 1;
   transition-delay: .2s;
 }
-/* line 133, ../sass/styles.scss */
+/* line 136, ../sass/styles.scss */
 .portfolio-item-outer:hover p {
   opacity: 1;
   transition-delay: .3s;
 }
-/* line 137, ../sass/styles.scss */
+/* line 140, ../sass/styles.scss */
 .portfolio-item-outer:hover ~ img {
   opacity: .3;
 }
 
-/* line 142, ../sass/styles.scss */
+/* line 145, ../sass/styles.scss */
 .portfolio-item-inner {
   display: table;
   min-height: 200px;
@@ -8946,26 +8962,26 @@ a {
   height: 100%;
 }
 
-/* line 148, ../sass/styles.scss */
+/* line 151, ../sass/styles.scss */
 .portfolio-item-title {
   color: #FFF;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 152, ../sass/styles.scss */
+/* line 155, ../sass/styles.scss */
 .portfolio-item-title h2 {
   opacity: 0;
   transition: opacity .4s ease-in-out;
   transition-delay: 0s;
 }
-/* line 157, ../sass/styles.scss */
+/* line 160, ../sass/styles.scss */
 .portfolio-item-title p {
   opacity: 0;
   transition: opacity .4s ease-in-out;
   transition-delay: 0s;
 }
 
-/* line 163, ../sass/styles.scss */
+/* line 166, ../sass/styles.scss */
 .portfolio-image {
   box-shadow: #000 0em 0em 0em;
   opacity: 1;
@@ -8973,7 +8989,7 @@ a {
   transition: opacity .4s ease-in-out;
 }
 
-/* line 169, ../sass/styles.scss */
+/* line 172, ../sass/styles.scss */
 .img-browser {
   border-radius: .8%;
 }
