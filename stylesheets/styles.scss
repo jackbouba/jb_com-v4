@@ -129,6 +129,7 @@ a {
   left: 0;
   z-index: 2;
   &:hover {
+    position: absolute;
     h2 {
       opacity: 1;
       transition-delay: .2s;
