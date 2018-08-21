@@ -37,7 +37,7 @@ $link-color:            $text-color;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      $secondary;
 //** Link hover decoration.
-$link-hover-decoration: none;
+$link-hover-decoration: underline;
 
 //== Typography
 //
@@ -320,7 +320,7 @@ $headings-font-family:    $font-family-serif;
 //** Number of columns in the grid.
 // $grid-columns:              12
 //** Padding between columns. Gets divided in half for the left and right.
-$grid-gutter-width:         60px;
+$grid-gutter-width:         30px;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
 // $grid-float-breakpoint:     $screen-sm-min
