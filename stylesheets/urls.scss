@@ -1,0 +1,103 @@
+---
+---
+
+@import "bootstrap-variables-urls";
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+
+// ==================================\
+// Global
+// ==================================/
+
+body {
+  font-weight: 300;
+}
+
+// ==================================\
+// Utilities
+// ==================================/
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  > [class^="col-"],
+  > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+.mb0 {
+  margin-bottom: 0;
+}
+.mbs {
+  margin-bottom: 15px;
+}
+.mbm {
+  margin-bottom: 30px;
+}
+.mt0 {
+  margin-top: 0;
+}
+.mtl {
+  margin-top: 60px;
+}
+.mtxl {
+  margin-top: 120px;
+}
+.mbl {
+  margin-bottom: 60px;
+}
+.mbxl {
+  margin-bottom: 120px;
+}
+.reverse {
+  background: #FFF;
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #000;
+  }
+}
+.text--small {
+  @extend small;
+}
+.text--supplemental {
+  @extend .raleway;
+  color: $secondary;
+  font-size: .8em;
+  text-transform: uppercase;
+}
+.intro {
+//  @extend .mtxl, .mbxl;
+}
+.clear {
+  clear: both;
+}
+.lnr {
+  font-size: 20px;
+  &.lnr-2x {
+    font-size: 40px;
+  }
+  &.lnr-3x {
+    font-size: 60px;
+  }
+}
+
+// ==================================\
+// Styles
+// ==================================/
+
+.intro {
+  color: #646464;
+}
+
+h1 {
+  font-size: 110px;
+  span {
+    font-size: 30px;
+    font-style: italic;
+  }
+}
