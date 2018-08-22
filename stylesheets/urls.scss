@@ -25,6 +25,9 @@ img {
   padding-left: 30px;
   padding-right: 30px;
 }
+hr {
+  border-width: 5px;
+}
 
 // ==================================\
 // Utilities
@@ -45,14 +48,26 @@ img {
 .mb0 {
   margin-bottom: 0;
 }
+.mbxs {
+  margin-bottom: 5px;
+}
 .mbs {
   margin-bottom: 15px;
 }
 .mbm {
   margin-bottom: 30px;
 }
+.mrxs {
+  margin-right: 5px;
+}
 .mt0 {
   margin-top: 0;
+}
+.mts {
+  margin-top: 15px;
+}
+.mtm {
+  margin-top: 30px;
 }
 .mtl {
   margin-top: 60px;
@@ -120,6 +135,7 @@ h1 {
   font-family: $font-family-sans-serif;
   font-size: $font-size-base;
   font-weight: bold;
+  letter-spacing: .6px;
   margin-bottom: 20px;
 }
 .url-description {

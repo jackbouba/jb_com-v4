@@ -33,7 +33,7 @@ $body-bg:               #FFF;
 $text-color:            #2B2B2B;
 
 //** Global textual link color.
-$link-color:            $text-color;
+$link-color:            #000;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      $secondary;
 //** Link hover decoration.
@@ -838,4 +838,4 @@ $grid-gutter-width:         30px;
 //** Point at which .dl-horizontal becomes horizontal
 // $dl-horizontal-breakpoint:    $grid-float-breakpoint
 //** Horizontal line color.
-// $hr-border:                   $gray-lighter
+$hr-border:                   #000;
