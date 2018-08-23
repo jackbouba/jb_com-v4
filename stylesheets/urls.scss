@@ -126,6 +126,7 @@ hr {
 
 h1 {
   font-size: 110px;
+  font-size: 7.6vw;
   span {
     font-size: 30px;
     font-style: italic;
@@ -141,4 +142,24 @@ h1 {
 .url-description {
   font-style: italic;
   font-weight: 400;
+}
+
+
+// ==================================\
+// Mobile
+// ==================================/
+
+@media (max-width: 767px) {
+  h1 {
+    span {
+      font-size: 17px;
+    }
+  }
+  .contact-info {
+    margin-bottom: 10px;
+    text-align: left;
+    p {
+      font-size: 16px;
+    }
+  }
 }
