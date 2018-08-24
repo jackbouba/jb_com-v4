@@ -28,6 +28,20 @@ a {
   border-bottom: 1px solid;
   transition: all .3s ease-in-out;
 }
+dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+dt, dd {
+  float: left;
+  margin-bottom: 20px;
+}
+dt {
+  width: 15%;
+}
+dd {
+  width: 85%;
+}
 //p {
 //  margin: 0 0 30px;
 //}
@@ -175,6 +189,20 @@ a {
 }
 .img-browser {
   border-radius: .8%;
+}
+
+// ==================================\
+// Mobile
+// ==================================/
+
+@media (max-width: 767px) {
+  dt, dd {
+    float: none;
+    width: 100%;
+  }
+  dt {
+    margin-bottom: 5px;
+  }
 }
 
 
